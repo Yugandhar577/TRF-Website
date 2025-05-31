@@ -4,137 +4,154 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact - The Robotics Forum</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body id="contact-page">
-  <header>
-    <nav>
-      <a href="about.html">ABOUT</a>
-      <a href="sponsors.html">SPONSORS</a>
-      <a href="events.html">EVENTS</a>
-      <a href="gallery.html">GALLERY</a>
-      <a href="achievements.html">ACHIEVEMENTS</a>
-      <a href="team.html">TEAM</a>
-      <a href="bots.html">BOTS</a>
-      <a href="contact.html">CONTACT</a>
-    </nav>
-  </header>
-  <a href="home.html"
-    ><img
-      src="resources/logo.jpeg"
-      alt="The Robotics Forum Logo"
-      width="100"
-      style="position: fixed; top: 15px; left: 15px"
-  /></a>
-  <div class="content">
-    <h1>Contact Us</h1>
-    <p>Email: robotics.forum@vit.edu</p>
-    <p>Phone: +91-XXXXXXXXXX</p>
-    <p>666, Upper Indira Nagar, Bibwewadi, Pune, Maharashtra 411037</p>
+<body id="contact-page" class="bg-dark text-light">
 
-    <h2>Connect with Us</h2>
-    <div class="social-links">
-      <p><a href="https://www.instagram.com/vitpunerobotics/" target="_blank"
-          >Instagram: @vitpunerobotics</a
-        ></p>
-      <p>
-        <a href="https://in.linkedin.com/company/the-robotics-forum" target="_blank"
-          >LinkedIn: The Robotics Forum, VIT Pune</a
-        >
-      </p>
-      <p>
-        <a href="https://www.youtube.com/c/TheRoboticsForumVITPune" target="_blank"
-          >YouTube: The Robotics Forum</a
-        >
-      </p>
-      <p>
-        <a href="https://github.com/The-Robotics-Forum" target="_blank"
-          >GitHub: The-Robotics-Forum</a
-        >
-      </p>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent custom-navbar shadow">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="home.html">
+        <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/logo.png" alt="The Robotics Forum Logo" width="48" class="me-2">
+        <span class="fw-bold">The Robotics Forum</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="sponsors.html">SPONSORS</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">EVENTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+          <li class="nav-item"><a class="nav-link" href="achievements.html">ACHIEVEMENTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">TEAM</a></li>
+          <li class="nav-item"><a class="nav-link" href="bots.html">BOTS</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-10 text-center">
+        <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/logo.png" alt="The Robotics Forum Logo" class="mb-4" style="max-width:120px;">
+        <h1 class="display-4 fw-bold mb-3">Contact Us</h1>
+        <p class="lead">We'd love to hear from you!</p>
+      </div>
     </div>
 
-    <h2>Frequently Asked Questions</h2>
-    <div id="faq">
-      <div class="faq-item">
-        <h3 class="faq-question">What is The Robotics Forum?</h3>
-        <div class="faq-answer">
-          <p>
-            The Robotics Forum (TRF) is the premier robotics club at VIT Pune,
-            focusing on robotics innovation, training, and competitions.
-          </p>
+    <div class="row g-4 mb-4">
+      <div class="col-md-6">
+        <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+          <div class="card-body">
+            <h4 class="card-title">Contact Details</h4>
+            <p><strong>Email:</strong> robotics.forum@vit.edu</p>
+            <p><strong>Phone:</strong> +91-XXXXXXXXXX</p>
+            <p><strong>Address:</strong><br>
+            666, Upper Indira Nagar, Bibwewadi,<br>Pune, Maharashtra 411037</p>
+            <h5 class="mt-4">Connect with Us</h5>
+            <div class="d-flex gap-3 fs-3 social-links">
+              <a href="https://www.instagram.com/vitpunerobotics/" target="_blank" class="text-info" title="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://in.linkedin.com/company/the-robotics-forum" target="_blank" class="text-info" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.youtube.com/c/TheRoboticsForumVITPune" target="_blank" class="text-danger" title="YouTube"><i class="bi bi-youtube"></i></a>
+              <a href="https://github.com/The-Robotics-Forum" target="_blank" class="text-light" title="GitHub"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="faq-item">
-        <h3 class="faq-question">How can I join TRF?</h3>
-        <div class="faq-answer">
-          <p>
-            You can join by attending our workshops or contacting us via email
-            or social media.
-          </p>
-        </div>
-      </div>
-      <div class="faq-item">
-        <h3 class="faq-question">Do you offer workshops?</h3>
-        <div class="faq-answer">
-          <p>
-            Yes, TRF organizes multiple workshops throughout the year for
-            beginners and advanced learners.
-          </p>
+
+      <div class="col-md-6">
+        <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+          <div class="card-body">
+            <h4 class="card-title">Send an Inquiry</h4>
+            <form id="inquiry-form" class="inquiry-form">
+              <div class="mb-3">
+                <label for="inquiry-subject" class="form-label">Subject:</label>
+                <input type="text" id="inquiry-subject" class="form-control" placeholder="Subject" required />
+              </div>
+              <div class="mb-3">
+                <label for="inquiry-body" class="form-label">Body:</label>
+                <textarea id="inquiry-body" class="form-control" placeholder="Type your message here" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100" title="Click to send your inquiry">Inquire</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
 
-    <h2>Send an Inquiry</h2>
-    <form id="inquiry-form" class="inquiry-form">
-      <label for="inquiry-subject">Subject:</label>
-      <input type="text" id="inquiry-subject" placeholder="Subject" required />
-      <label for="inquiry-body">Body:</label>
-      <textarea
-        id="inquiry-body"
-        placeholder="Type your message here"
-        required
-      ></textarea>
-      <button type="submit" title="Click to send your inquiry">Inquire</button>
-    </form>
+    <h2 class="text-center text-primary mb-4">Frequently Asked Questions</h2>
+    <div class="accordion mb-5" id="faqAccordion">
+      <div class="accordion-item bg-secondary bg-opacity-10 border-0">
+        <h2 class="accordion-header" id="faq1-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+            What is The Robotics Forum?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse" aria-labelledby="faq1-header" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            The Robotics Forum (TRF) is the premier robotics club at VIT Pune, focusing on robotics innovation, training, and competitions.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-secondary bg-opacity-10 border-0">
+        <h2 class="accordion-header" id="faq2-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+            How can I join TRF?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2-header" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            You can join by attending our workshops or contacting us via email or social media.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item bg-secondary bg-opacity-10 border-0">
+        <h2 class="accordion-header" id="faq3-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+            Do you offer workshops?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3-header" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, TRF organizes multiple workshops throughout the year for beginners and advanced learners.
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="newsletter-container">
       <h2>Subscribe to our Newsletter</h2>
       <p>Stay updated with the latest news and events from The Robotics Forum.</p>
       <div class="newsletter-box">
         <form class="newsletter-form">
-          <label for="newsletter-username">Name:</label>
-          <input
-            id="newsletter-username"
-            name="username"
-            type="text"
-            placeholder="Enter your name"
-            required
-          />
-          <label for="newsletter-email">Email:</label>
-          <input
-            id="newsletter-email"
-            name="email"
-            type="email"
-            placeholder="Enter your email"
-            required
-            class="newsletter-email"
-            title="Enter your email address"
-          />
-          <button type="submit" class="newsletter-subscribe" title="Subscribe to newsletter">
+          <div class="mb-3">
+            <label for="newsletter-username" class="form-label">Name:</label>
+            <input id="newsletter-username" name="username" type="text" class="form-control" placeholder="Enter your name" required />
+          </div>
+          <div class="mb-3">
+            <label for="newsletter-email" class="form-label">Email:</label>
+            <input id="newsletter-email" name="email" type="email" class="form-control newsletter-email" placeholder="Enter your email" required title="Enter your email address" />
+          </div>
+          <button type="submit" class="btn btn-primary w-100 newsletter-subscribe" title="Subscribe to newsletter">
             Subscribe
           </button>
         </form>
       </div>
     </div>
-  </div>
+  </main>
 
-  <footer>
-    <p>&copy; 2023 The Robotics Forum. All rights reserved.</p>
-    <p>Website designed by Yugandhar Paulbidhe</p>
+  <footer class="custom-footer text-white text-center py-3 mt-5">
+    &copy; 2025 The Robotics Forum, VIT Pune. All rights reserved.<br>
+    Website designed by Yugandhar Paulbidhe
   </footer>
 
+  <!-- Bootstrap JS & Bootstrap Icons -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <script src="script.js"></script>
 </body>
 </html>

@@ -3,25 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Robotics Forum</title>
+    <title>The Robotics Forum | VIT Pune</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="home-page"> 
-    <nav>
-        <a href="about.html">ABOUT</a>
-        <a href="sponsors.html">SPONSORS</a>
-        <a href="events.html">EVENTS</a>
-        <a href="gallery.html">GALLERY</a>
-        <a href="achievements.html">ACHIEVEMENTS</a>
-        <a href="team.html">TEAM</a>
-        <a href="bots.html">BOTS</a>
-        <a href="contact.html">CONTACT</a>
-    </nav>   
-    <a href="home.html"><img src="..\resources\logo.jpeg" alt="The Robotics Forum Logo" width="100" style="position: fixed; top: 15px; left: 15px;"></a> 
-    <div class="content">
-        <h1>The Robotics Forum</h1>
-        <p>VIT Pune</p>
-        <p>Innovate, Build, Automate</p>
-    </div>
+<body class="bg-dark">
+
+    <!-- Bootstrap Transparent Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent custom-navbar shadow">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+                <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/logo.png" alt="The Robotics Forum Logo" width="48" class="me-2">
+                <span class="fw-bold">The Robotics Forum</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sponsors.html">SPONSORS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">EVENTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="achievements.html">ACHIEVEMENTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">TEAM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bots.html">BOTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/logo.png" alt="The Robotics Forum Logo" class="hero-logo">
+            <div class="hero-title">The Robotics Forum</div>
+            <div class="hero-subtitle">Vishwakarma Institute of Technology, Pune</div>
+            <div class="hero-motto">Innovate &bull; Build &bull; Automate</div>
+            <a href="about.html" class="btn btn-lg btn-outline-light mt-3 px-4">Learn More</a>
+        </div>
+    </section>
+
+    <footer class="custom-footer text-white text-center py-3 mt-5">
+        &copy; 2025 The Robotics Forum, VIT Pune. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

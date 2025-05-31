@@ -3,62 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - The Robotics Forum</title>
+    <title>Events & Projects - The Robotics Forum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="about.html">ABOUT</a>
-            <a href="sponsors.html">SPONSORS</a>
-            <a href="events.html">EVENTS</a>
-            <a href="gallery.html">GALLERY</a>
-            <a href="achievements.html">ACHIEVEMENTS</a>
-            <a href="team.html">TEAM</a>
-            <a href="bots.html">BOTS</a>
-            <a href="contact.html">CONTACT</a>
-        </nav>
-    </header>
-    <a href="home.html"><img src="..\resources\logo.jpeg" alt="The Robotics Forum Logo" width="100" style="position: fixed; top: 15px; left: 15px;"></a> 
-    <div class="content">
-        <h1>Events</h1>
-    </div>
-    <section id="events">
-        <article>
-            <h3>Robocon Participation</h3>
-            <div class="image-container">
-             <img src="..\resources\robocon.jpg" alt="TRF at Robocon 2024">
+<body id="events-page" class="bg-dark text-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent custom-navbar shadow">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+                <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/logo.png" alt="The Robotics Forum Logo" width="48" class="me-2">
+                <span class="fw-bold">The Robotics Forum</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sponsors.html">SPONSORS</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="events.html">EVENTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="achievements.html">ACHIEVEMENTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">TEAM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bots.html">BOTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
             </div>
-            <p>The Robotics Forum (TRF) consistently competes in <strong>Robocon</strong>, an international robotics competition. They showcased their robots in the National DD Robocon 2024 League, emphasizing precision and teamwork. <a href="https://www.instagram.com/vitpunerobotics/reel/DBNlVtkImQK/" target="_blank">Learn more</a></p>
-        </article>
-    
-        <article>
-            <h3>Level-1 Workshop 2024</h3>
-            <div class="image-container">
-            <img src="..\resources\trf level 1.PNG" alt="Students at Level-1 Workshop 2024">
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="row justify-content-center mb-4">
+            <div class="col-lg-10 text-center">
+                <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/logo.png" alt="The Robotics Forum Logo" class="mb-4" style="max-width:120px;">
+                <h1 class="display-4 fw-bold mb-3">Events & Projects</h1>
+                <p class="lead">Explore our flagship events, workshops, and collaborative projects</p>
             </div>
-            <p>In early 2024, TRF conducted the <strong>Level-1 Workshop</strong>, introducing students to robotics fundamentals. This workshop provided hands-on experience and foundational knowledge for aspiring roboticists. <a href="https://www.instagram.com/vitpunerobotics/p/DHaG8EsIR-p/" target="_blank">Learn more</a></p>
-        </article>
-    
-        <article>
-            <h3>Vishwa Tech Spectra (VTS) Participation</h3>
-            <img src="images/vts2024.jpg" alt="TRF at Vishwa Tech Spectra 2024">
-            <p>TRF participates in <strong>Vishwa Tech Spectra (VTS)</strong>, a three-day inter-college tech fest at VIT Pune. The event features technical competitions, workshops, and challenges, including robotics contests.</p>
-        </article>
-    
-        <article>
-            <h3>Collaborative Workshops</h3>
-            <img src="images/collaborative_workshop.jpg" alt="Collaborative Workshop Session">
-            <p>TRF collaborates with other technical forums and industry experts to host workshops on topics like machine learning, automation, and advanced robotics, enhancing members' technical skills.</p>
-        </article>
-    
-        <article>
-            <h3>Alumni Interaction Sessions</h3>
-            <img src="images/alumni_interaction.jpg" alt="Alumni Interaction Session">
-            <p>Regular sessions with TRF alumni working in robotics and related fields provide current members with insights into industry trends, career guidance, and networking opportunities.</p>
-        </article>
-    
-    </section>
-    
+        </div>
+
+        <div class="row g-4">
+            <!-- Robocon Participation -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+                    <img src="https://media.licdn.com/dms/image/D4D22AQFZk9wI4fOpfQ/feedshare-shrink_2048_1536/0/1711464473149?e=2147483647&v=beta&t=3wO9h6qjCkXwKx0d7D0vFjv2cXyQnR6W6tKf1z8F9nQ" class="card-img-top" alt="TRF at Robocon 2024">
+                    <div class="card-body">
+                        <h5 class="card-title">Robocon Participation</h5>
+                        <p class="card-text">
+                            TRF consistently competes in <strong>Robocon</strong>, an international robotics competition. The team showcased their robots in the National DD Robocon 2024 League, emphasizing precision and teamwork.
+                        </p>
+                        <a href="https://www.instagram.com/vitpunerobotics/reel/DBNlVtkImQK/" target="_blank" class="btn btn-outline-primary btn-sm">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Level-1 Workshop -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+                    <img src="https://media.licdn.com/dms/image/D4D22AQE5vQk1eGk3wA/feedshare-shrink_2048_1536/0/1711464473149?e=2147483647&v=beta&t=3wO9h6qjCkXwKx0d7D0vFjv2cXyQnR6W6tKf1z8F9nQ" class="card-img-top" alt="Students at Level-1 Workshop 2024">
+                    <div class="card-body">
+                        <h5 class="card-title">Level-1 Workshop 2024</h5>
+                        <p class="card-text">
+                            In early 2024, TRF conducted the <strong>Level-1 Workshop</strong>, introducing students to robotics fundamentals and providing hands-on experience for aspiring roboticists.
+                        </p>
+                        <a href="https://www.instagram.com/vitpunerobotics/p/DHaG8EsIR-p/" target="_blank" class="btn btn-outline-primary btn-sm">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Vishwa Tech Spectra (VTS) -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+                    <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/events/vts2024.jpg" class="card-img-top" alt="TRF at Vishwa Tech Spectra 2024">
+                    <div class="card-body">
+                        <h5 class="card-title">Vishwa Tech Spectra (VTS)</h5>
+                        <p class="card-text">
+                            TRF participates in <strong>Vishwa Tech Spectra (VTS)</strong>, a three-day inter-college tech fest at VIT Pune featuring technical competitions, workshops, and robotics challenges.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Collaborative Workshops -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+                    <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/events/collaborative_workshop.jpg" class="card-img-top" alt="Collaborative Workshop Session">
+                    <div class="card-body">
+                        <h5 class="card-title">Collaborative Workshops</h5>
+                        <p class="card-text">
+                            TRF collaborates with other technical forums and industry experts to host workshops on topics like machine learning, automation, and advanced robotics, enhancing members' technical skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Alumni Interaction Sessions -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+                    <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/events/alumni_interaction.jpg" class="card-img-top" alt="Alumni Interaction Session">
+                    <div class="card-body">
+                        <h5 class="card-title">Alumni Interaction Sessions</h5>
+                        <p class="card-text">
+                            Regular sessions with TRF alumni working in robotics and related fields provide current members with insights into industry trends, career guidance, and networking opportunities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="custom-footer text-white text-center py-3 mt-5">
+        &copy; 2025 The Robotics Forum, VIT Pune. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

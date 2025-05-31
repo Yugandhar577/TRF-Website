@@ -4,47 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sponsors - The Robotics Forum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="sponsors-page">
-    <header>
-        <nav>
-            <a href="about.html">ABOUT</a>
-            <a href="sponsors.html">SPONSORS</a>
-            <a href="events.html">EVENTS</a>
-            <a href="gallery.html">GALLERY</a>
-            <a href="achievements.html">ACHIEVEMENTS</a>
-            <a href="team.html">TEAM</a>
-            <a href="bots.html">BOTS</a>
-            <a href="contact.html">CONTACT</a>
-        </nav>
-    </header>
-    <a href="home.html"><img src="..\resources\logo.jpeg" alt="The Robotics Forum Logo" width="100" style="position: fixed; top: 15px; left: 15px;"></a> 
-    <div class="content">    
-        <h1 style="text-align: center;">Our Valued Sponsors</h1>
-        <p style="text-align: center;">We are proud to collaborate with leading companies and organizations that share our vision for technological innovation.</p>
-            <div class="sponsors-container">
-                <div class="sponsor-box"><img src="..\resources\ansys.jpg" alt="Ansys"><br>@ansys_inc<br>Empowering us with world-leading engineering simulation software.</div>
-                <div class="sponsor-box"><img src="..\resources\revogreen tech.jpeg" alt="Revo Green"><br>@revogreentechnologies<br>Supporting us with vital resources to bring ideas to life.</div>
-                <div class="sponsor-box"><img src="..\resources\srijan control.jpg" alt="Srijan Control"><br>Srijan Control Drives<br>Enabling our progress with dedicated support.</div>
-                <div class="sponsor-box"><img src="..\resources\combatrobotics.jpeg" alt="Combat Robotics"><br>Combat Robotics<br>Inspiring us to push engineering boundaries.</div>
-                <div class="sponsor-box"><img src="..\resources\Micro laser.PNG" alt="Micro Laser"><br>Micro Laser<br>Offering precision laser cutting facilities.</div>
-                <div class="sponsor-box"><img src="..\resources\kura.png" alt="Kura"><br>Kura<br>Providing crucial electronic components for our robots.</div>
-                <div class="sponsor-box"><img src="..\resources\accleration robotics.jpeg" alt="Acceleration Robotics"><br>Acceleration Robotics<br>Fueling our progress with innovative solutions.</div>
-                <div class="sponsor-box"><img src="..\resources\dassault systemes.jpeg" alt="Dassault Systemes"><br>@dassaultsystemes<br>Equipping us with advanced 3D printing tools.</div>
-                <div class="sponsor-box"><img src="..\resources\prasanna engineers.jpeg" alt="Prasanna Engineers"><br>Prasanna Engineers<br>Laying the foundation for our success with reliable support.</div>
+<body id="sponsors-page" class="bg-dark text-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent custom-navbar shadow">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+                <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/logo.png" alt="The Robotics Forum Logo" width="48" class="me-2">
+                <span class="fw-bold">The Robotics Forum</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sponsors.html">SPONSORS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">EVENTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="achievements.html">ACHIEVEMENTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">TEAM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bots.html">BOTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
             </div>
-    </div>
-        <p style="text-align: center;">The Robotics Forum (TRF) at VIT Pune is grateful to our sponsors who support innovation, research, and technology development. Their contributions help us organize events, build projects, and participate in national and international competitions.</p>
-        <h2>Why Sponsor Us?</h2>
-        <ul>
-            <li>🌟 Gain visibility among top engineering students and professionals.</li>
-            <li>🔧 Support cutting-edge robotics and AI projects.</li>
-            <li>🏆 Be part of national and international robotics competitions.</li>
-            <li>📢 Brand promotion through our events, website, and social media.</li>
-        </ul>
-        <h2 style="text-align: center;">Become a Sponsor</h2>
-        <p style="text-align: center;">If you're interested in partnering with us, please reach out to us at <a href="contact.html">CONTACT</a>. Let's innovate together!</p>
-    </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="row justify-content-center mb-4">
+            <div class="col-lg-10 text-center">
+                <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/logo.png" alt="The Robotics Forum Logo" class="mb-4" style="max-width:120px;">
+                <h1 class="display-4 fw-bold mb-3">Our Valued Sponsors</h1>
+                <p class="lead">We are proud to collaborate with leading companies and organizations that share our vision for technological innovation.</p>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 sponsors-container">
+            <div class="col">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100 text-center sponsor-box">
+                    <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/sponsors/ansys.jpg" class="card-img-top mx-auto" style="max-height:90px; width:auto;" alt="Ansys">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">@ansys_inc</h5>
+                        <p class="card-text">Empowering us with world-leading engineering simulation software.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100 text-center sponsor-box">
+                    <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/sponsors/revogreen_tech.jpg" class="card-img-top mx-auto" style="max-height:90px; width:auto;" alt="Revo Green">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">@revogreentechnologies</h5>
+                        <p class="card-text">Supporting us with vital resources to bring ideas to life.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100 text-center sponsor-box">
+                    <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/sponsors/srijan_control.jpg" class="card-img-top mx-auto" style="max-height:90px; width:auto;" alt="Srijan Control">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Srijan Control Drives</h5>
+                        <p class="card-text">Enabling our progress with dedicated support.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100 text-center sponsor-box">
+                    <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/sponsors/combatrobotics.jpg" class="card-img-top mx-auto" style="max-height:90px; width:auto;" alt="Combat Robotics">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Combat Robotics</h5>
+                        <p class="card-text">Inspiring us to push engineering boundaries.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100 text-center sponsor-box">
+                    <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/sponsors/micro_laser.jpg" class="card-img-top mx-auto" style="max-height:90px; width:auto;" alt="Micro Laser">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Micro Laser</h5>
+                        <p class="card-text">Offering precision laser cutting facilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100 text-center sponsor-box">
+                    <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/sponsors/kura.jpg" class="card-img-top mx-auto" style="max-height:90px; width:auto;" alt="Kura">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Kura</h5>
+                        <p class="card-text">Providing crucial electronic components for our robots.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100 text-center sponsor-box">
+                    <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/sponsors/acceleration_robotics.jpg" class="card-img-top mx-auto" style="max-height:90px; width:auto;" alt="Acceleration Robotics">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Acceleration Robotics</h5>
+                        <p class="card-text">Fueling our progress with innovative solutions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100 text-center sponsor-box">
+                    <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/sponsors/dassault_systemes.jpg" class="card-img-top mx-auto" style="max-height:90px; width:auto;" alt="Dassault Systemes">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">@dassaultsystemes</h5>
+                        <p class="card-text">Equipping us with advanced 3D printing tools.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100 text-center sponsor-box">
+                    <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/sponsors/prasanna_engineers.jpg" class="card-img-top mx-auto" style="max-height:90px; width:auto;" alt="Prasanna Engineers">
+                    <div class="card-body">
+                        <h5 class="card-title mb-1">Prasanna Engineers</h5>
+                        <p class="card-text">Laying the foundation for our success with reliable support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-10">
+                <p class="text-center">
+                    The Robotics Forum (TRF) at VIT Pune is grateful to our sponsors who support innovation, research, and technology development. Their contributions help us organize events, build projects, and participate in national and international competitions.
+                </p>
+                <h2 class="text-center text-primary mb-3">Why Sponsor Us?</h2>
+                <ul class="list-group list-group-flush mb-4">
+                    <li class="list-group-item bg-transparent text-light">🌟 Gain visibility among top engineering students and professionals.</li>
+                    <li class="list-group-item bg-transparent text-light">🔧 Support cutting-edge robotics and AI projects.</li>
+                    <li class="list-group-item bg-transparent text-light">🏆 Be part of national and international robotics competitions.</li>
+                    <li class="list-group-item bg-transparent text-light">📢 Brand promotion through our events, website, and social media.</li>
+                </ul>
+                <h2 class="text-center text-primary">Become a Sponsor</h2>
+                <p class="text-center">
+                    If you're interested in partnering with us, please reach out to us at <a href="contact.html">CONTACT</a>. Let's innovate together!
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="custom-footer text-white text-center py-3 mt-5">
+        &copy; 2025 The Robotics Forum, VIT Pune. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

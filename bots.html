@@ -3,23 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - The Robotics Forum</title>
+    <title>Bots & Boards - The Robotics Forum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="contact-page">
-    <header>
-        <nav>
-            <a href="about.html">ABOUT</a>
-            <a href="sponsors.html">SPONSORS</a>
-            <a href="events.html">EVENTS</a>
-            <a href="gallery.html">GALLERY</a>
-            <a href="achievements.html">ACHIEVEMENTS</a>
-            <a href="team.html">TEAM</a>
-            <a href="bots.html">BOTS</a>
-            <a href="contact.html">CONTACT</a>
-        </nav>
-    </header>
-    <a href="home.html"><img src="..\resources\logo.jpeg" alt="The Robotics Forum Logo" width="100" style="position: fixed; top: 15px; left: 15px;"></a> 
-    <div class="content">
-        <h1>Our Bots</h1>
-    </div>    
+<body id="bots-page" class="bg-dark text-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent custom-navbar shadow">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="home.html">
+                <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/logo.png" alt="The Robotics Forum Logo" width="48" class="me-2">
+                <span class="fw-bold">The Robotics Forum</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sponsors.html">SPONSORS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="events.html">EVENTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="achievements.html">ACHIEVEMENTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="team.html">TEAM</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="bots.html">BOTS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="row justify-content-center mb-4">
+            <div class="col-lg-10 text-center">
+                <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/logo.png" alt="The Robotics Forum Logo" class="mb-4" style="max-width:120px;">
+                <h1 class="display-4 fw-bold mb-3">Our Bots & Boards</h1>
+                <p class="lead">In-house developed hardware and robots by TRF</p>
+            </div>
+        </div>
+
+        <!-- In-house Developed Boards -->
+        <h2 class="text-center text-primary mb-4">In-house Developed Boards</h2>
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+                    <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/boards/roboctrl_board.jpg" class="card-img-top" alt="RoboCTRL Board">
+                    <div class="card-body">
+                        <h5 class="card-title">RoboCTRL Board</h5>
+                        <p class="card-text">A custom, multi-purpose microcontroller board designed by TRF for robotics prototyping, sensor integration, and motor control.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+                    <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/boards/roboio_board.jpg" class="card-img-top" alt="RoboIO Board">
+                    <div class="card-body">
+                        <h5 class="card-title">RoboIO Board</h5>
+                        <p class="card-text">A versatile I/O expansion board developed by TRF for interfacing sensors, actuators, and communication modules with ease.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+                    <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/boards/power_board.jpg" class="card-img-top" alt="Power Management Board">
+                    <div class="card-body">
+                        <h5 class="card-title">Power Management Board</h5>
+                        <p class="card-text">In-house power distribution and management board for safe, efficient energy delivery to complex robots.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bots Developed by TRF -->
+        <h2 class="text-center text-primary mb-4">Robots Developed by TRF</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+                    <img src="https://media.licdn.com/dms/image/D4D22AQG5Z3XwU9uJwA/feedshare-shrink_2048_1536/0/1711464473149?e=2147483647&v=beta&t=3wO9h6qjCkXwKx0d7D0vFjv2cXyQnR6W6tKf1z8F9nQ" class="card-img-top" alt="BHAU 6.0 Humanoid">
+                    <div class="card-body">
+                        <h5 class="card-title">BHAU 6.0 Humanoid</h5>
+                        <p class="card-text">TRF's flagship humanoid robot, capable of advanced gesture recognition, speech, and interactive tasks. Showcased at VIT Pune and tech fests.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+                    <img src="https://media.licdn.com/dms/image/D4D22AQFZk9wI4fOpfQ/feedshare-shrink_2048_1536/0/1711464473149?e=2147483647&v=beta&t=3wO9h6qjCkXwKx0d7D0vFjv2cXyQnR6W6tKf1z8F9nQ" class="card-img-top" alt="Robocon Bots">
+                    <div class="card-body">
+                        <h5 class="card-title">Robocon Bots</h5>
+                        <p class="card-text">A series of custom robots built for the prestigious ABU Robocon competition, featuring precise automation, vision, and teamwork.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+                    <img src="https://media.licdn.com/dms/image/D4D22AQE5vQk1eGk3wA/feedshare-shrink_2048_1536/0/1711464473149?e=2147483647&v=beta&t=3wO9h6qjCkXwKx0d7D0vFjv2cXyQnR6W6tKf1z8F9nQ" class="card-img-top" alt="e-Yantra Bots">
+                    <div class="card-body">
+                        <h5 class="card-title">e-Yantra Bots</h5>
+                        <p class="card-text">Robots designed for the e-Yantra Robotics Competition, focusing on automation, path planning, and real-world problem solving.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more bots as needed -->
+        </div>
+    </main>
+
+    <footer class="custom-footer text-white text-center py-3 mt-5">
+        &copy; 2025 The Robotics Forum, VIT Pune. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,297 +1,256 @@
-/* ========== Base Styles ========== */
+:root {
+    --trf-blue: #2A4FA8;
+    --trf-blue-dark: #0a1f44;
+    --trf-blue-darker: #1a3573;
+    --trf-accent: #c9e2ff;
+}
+
+/* General Styles */
 body {
-    background-color: black;
-    color: white;
+    background-color: #000 !important;
+    color: #fff;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-/* ========== Navigation Bar ========== */
-nav {
-    position: fixed;
-    top: 0;
-    left: -100px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 55px;
-    text-align: right;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #2A4FA8;
-}
-
-/* ========== Content Headings ========== */
-.content h1 {
-    padding-top: 120px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-}
-
-/* ========== Home Page ========== */
-#home-page .content h1 {
-    padding-top: 300px;
-    color: #fff;
-}
-#home-page .content p {
-    font-size: 16px;
-    padding-left: 20px;
-    padding-right: 20px;
-    text-align: center;
-    color: #fff;
-}
-
-/* admin page */
-body {
-    background-color: #18191a !important;
-}
-.card {
-    border-radius: 1rem;
-}
-.card-header {
-    border-top-left-radius: 1rem !important;
-    border-top-right-radius: 1rem !important;
-}
-.card-body {
-    border-bottom-left-radius: 1rem !important;
-    border-bottom-right-radius: 1rem !important;
-}
-
-/* ========== About & Contact Page Shared Content ========== */
-#about-page .content,
-#contact-page .content {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    color: white;
-}
-
-/* ========== About Page Toggle Sections ========== */
-.toggle-section h2 {
-    cursor: pointer;
-    background-color: #2A4FA8;
-    padding: 10px 15px;
-    border-radius: 8px;
-    user-select: none;
-    margin-bottom: 5px;
-}
-
-.toggle-section p {
-    padding: 10px 15px;
-    background-color: #0A1F44;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    display: none; /* Hidden by default */
-}
-.toggle-section ul {
-    display: none;
-    padding: 10px 15px;
-    background-color: #0A1F44;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-.toggle-section ul li {
-    margin: 5px 0;
-    padding: 5px;
-    list-style-type: disc;
-}
-
-/* ========== Sponsors Page ========== */
-#sponsors-page .sponsors-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-}
-#sponsors-page .sponsor-box {
-    background-color: white;
-    color: black;
-    padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    font-weight: bold;
-}
-#sponsors-page .sponsor-box img {
-    width: 150px;
-    height: 100px;
-    margin-bottom: 15px;
-}
-#sponsors-page .content {
-    margin-bottom: 15px;
-}
-
-/* ========== Events Page ========== */
-#events {
-    background-color: transparent;
-    padding: 20px;
-    margin: 20px 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-#events h2 {
-    text-align: center;
-    color: #333;
-}
-#events article {
-    background-color: #0A1F44;
-    padding: 15px;
-    border-radius: 20px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-#events h3 {
-    text-align: center;
-    color: #fff;
-}
-#events img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 15px;
-    margin: 10px 0;
-}
-#events a {
-    color: #2A4FA8;
+a {
+    color: var(--trf-accent);
     text-decoration: none;
 }
-#events a:hover {
+a:hover, a:focus {
+    color: var(--trf-blue);
     text-decoration: underline;
 }
-#events p {
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+    background: var(--trf-blue-dark) !important;
+    border-bottom: 2px solid var(--trf-blue);
+    box-shadow: 0 2px 10px rgba(42, 79, 168, 0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.navbar .nav-link.active, .navbar .nav-link:hover {
+    color: var(--trf-blue) !important;
+    text-shadow: 0 1px 2px #0002;
+}
+
+/* Hero Section */
+.hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, var(--trf-blue-dark) 60%, var(--trf-blue) 100%);
     color: #fff;
     text-align: center;
 }
-.image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 350px;
+.hero-logo {
+    max-width: 180px;
+    margin-bottom: 2rem;
 }
-
-/* ========== Gallery Page ========== */
-#gallery-page .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 15px;
-    padding: 20px;
-    justify-content: center;
-}
-#gallery-page .gallery-box {
-    width: 150px;
-    height: 150px;
-    background-color: #0A1F44;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+.hero-title {
+    font-size: 3rem;
     font-weight: bold;
-    font-size: 1.2em;
-    border-radius: 15px;
+}
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.hero-motto {
+    font-size: 1.25rem;
+    color: var(--trf-accent);
+    margin-bottom: 2rem;
+}
+@media (max-width: 600px) {
+    .hero-title { font-size: 2rem; }
+    .hero-subtitle { font-size: 1.1rem; }
 }
 
-/* ========== Achievements Page ========== */
-#achievements-page p {
-    font-size: 16px;
-    line-height: 1.6;
+/* Section Headings */
+h1, .display-4 {
+    color: var(--trf-accent);
+    font-weight: bold;
+}
+h2, h3, h4, h5 {
+    color: var(--trf-blue);
+    font-weight: 600;
 }
 
-/* ========== Contact Page ========== */
-#contact-page .content {
-    text-align: center;
+/* Cards & Boxes */
+.card,
+.newsletter-box,
+.add-member-form,
+.sponsor-box,
+.team-card,
+.inquiry-form,
+.accordion-item,
+.gallery-box {
+    background: var(--trf-blue) !important;
+    color: #fff !important;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 4px 24px rgba(42, 79, 168, 0.10);
 }
-#contact-page .newsletter-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
+
+/* For list-group in cards (like sponsors, FAQ, etc.) */
+.list-group-item {
+    background: transparent !important;
+    color: #fff !important;
+    border: none;
+}
+
+/* Card Images */
+.card-img-top {
+    background: #fff;
+    object-fit: contain;
+    max-height: 120px;
+    width: auto;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+.team-card .card-img-top {
+    background: none;
+    max-height: 100px;
+    width: 100px;
+    border: 3px solid var(--trf-blue);
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Gallery */
+.gallery-container {
+    margin-top: 2rem;
+}
+.gallery-box {
+    background: transparent;
+    border-radius: 12px;
+    padding: 0.5rem;
+    transition: box-shadow 0.2s;
+}
+.gallery-box:hover {
+    box-shadow: 0 2px 18px var(--trf-blue-dark);
+}
+.gallery-box img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* Sponsor Cards */
+.sponsor-box .card-img-top {
+    max-height: 90px;
+    width: auto;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn-outline-light, .btn-primary, .btn-outline-primary {
+    border-color: var(--trf-blue) !important;
+    color: var(--trf-blue) !important;
+    background-color: transparent !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.btn-outline-light:hover, .btn-primary:hover, .btn-outline-primary:hover {
+    background-color: var(--trf-blue-darker) !important;
+    color: #fff !important;
+    border-color: var(--trf-blue-darker) !important;
+}
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem var(--trf-blue-dark) !important;
+}
+.btn, .btn-primary, .btn-outline-light, .btn-outline-primary {
+    opacity: 1 !important;
+    display: inline-block !important;
+    background: #2A4FA8 !important;
+    color: #fff !important;
+    border: none !important;
+}
+.btn:hover, .btn:focus {
+    background: #1a3573 !important;
+    color: #fff !important;
+}
+
+/* Forms */
+.form-control, .form-select, textarea {
+    background: #222a3a !important;
+    color: #fff !important;
+    border: 1.5px solid var(--trf-blue);
+    border-radius: 0.5rem;
+}
+.form-control:focus, .form-select:focus, textarea:focus {
+    border-color: var(--trf-blue);
+    box-shadow: 0 0 0 0.2rem var(--trf-blue-dark) !important;
+}
+label {
+    color: var(--trf-blue);
+    font-weight: 500;
+}
+
+/* Make text inside text fields white */
+input.form-control, textarea.form-control {
+    color: #fff !important;
+    background: #222a3a !important;
+}
+
+/* FAQ Accordion */
+.accordion-item {
+    background: var(--trf-blue) !important;
+    border: none !important;
+    color: #fff;
+}
+.accordion-button {
+    background: var(--trf-blue) !important;
+    color: #fff !important;
+    font-weight: 600;
+}
+.accordion-button:not(.collapsed) {
+    background: var(--trf-blue-darker) !important;
+    color: var(--trf-accent) !important;
+}
+.accordion-body {
+    color: #e0e0e0;
+}
+
+/* Newsletter Box */
+.newsletter-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     text-align: center;
 }
 .newsletter-box {
-    background: #0A1F44;
-    border: 2px solid #2A4FA8;
+    background: var(--trf-blue) !important;
+    border: 2px solid var(--trf-blue-dark);
     border-radius: 15px;
     box-shadow: 0 4px 24px rgba(42, 79, 168, 0.10);
     padding: 32px 24px;
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 320px;
+    margin: 20px auto;
     max-width: 400px;
     width: 100%;
 }
-.newsletter-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    align-items: center;
-}
-input, button, textarea {
-    padding: 10px;
-    font-size: 16px;
-    width: 100%;
-    box-sizing: border-box;
-}
-#contact-page textarea {
-    width: 300px;
-    height: 100px;
-    margin-bottom: 10px;
-    resize: vertical;
-}
-#contact-page input[type="text"],
-#contact-page input[type="email"] {
-    width: 300px;
-    margin-bottom: 10px;
-}
-#contact-page button {
-    width: 150px;
-    background-color: #2A4FA8;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-#contact-page button:hover {
-    background-color: #1a3573;
-}
-#contact-page .social-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    margin-top: 20px;
-}
-.inquiry-form {
-    background: #0A1F44;
-    border: 2px solid #2A4FA8;
-    border-radius: 15px;
-    box-shadow: 0 4px 24px rgba(42, 79, 168, 0.10);
-    padding: 32px 24px;
-    margin: 30px auto 20px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 320px;
-    max-width: 400px;
-    width: 100%;
-    gap: 10px;
+.newsletter-form .form-control {
+    margin-bottom: 1rem;
 }
 
-/* ========== Team Page ========== */
+/* Add Member Form */
 .add-member-container {
     display: flex;
     justify-content: center;
@@ -300,7 +259,7 @@ input, button, textarea {
 .add-member-form {
     display: flex;
     gap: 15px;
-    background: #0A1F44;
+    background: var(--trf-blue) !important;
     padding: 20px 24px;
     border-radius: 12px;
     box-shadow: 0 2px 16px rgba(42, 79, 168, 0.10);
@@ -308,21 +267,21 @@ input, button, textarea {
 }
 .add-member-form input[type="text"] {
     padding: 10px 14px;
-    border: 1px solid #2A4FA8;
+    border: 1px solid var(--trf-blue-dark);
     border-radius: 6px;
     font-size: 16px;
     outline: none;
-    background: #fff;
-    color: #222;
+    background: #222a3a !important;
+    color: #fff !important;
     width: 150px;
     transition: border-color 0.2s;
 }
 .add-member-form input[type="text"]:focus {
-    border-color: #1a3573;
+    border-color: var(--trf-blue-darker);
 }
 .add-member-form button {
     padding: 10px 20px;
-    background: #2A4FA8;
+    background: var(--trf-blue-darker) !important;
     color: #fff;
     border: none;
     border-radius: 6px;
@@ -331,70 +290,61 @@ input, button, textarea {
     transition: background 0.2s;
 }
 .add-member-form button:hover {
-    background: #1a3573;
-}
-.team-table {
-    margin: 40px auto 0 auto;
-    border-collapse: collapse;
-    width: 90%;
-    max-width: 650px;
-    background: #0A1F44;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 24px rgba(42, 79, 168, 0.10);
-}
-.team-table thead {
-    background: #2A4FA8;
-}
-.team-table th,
-.team-table td {
-    padding: 16px 18px;
-    text-align: left;
-    color: #fff;
-    font-size: 1.05em;
-}
-.team-table th {
-    font-size: 1.15em;
-    letter-spacing: 1px;
-    font-weight: bold;
-    border-bottom: 2px solid #fff;
-}
-.team-table tbody tr:nth-child(even) {
-    background: #16326c;
-}
-.team-table tbody tr:hover {
-    background: #223f7a;
-    transition: background 0.2s;
+    background: var(--trf-blue-dark) !important;
 }
 
-/* ========== Responsive Styles ========== */
+/* Social Links */
+.social-links a {
+    color: var(--trf-blue);
+    transition: color 0.2s;
+}
+.social-links a:hover {
+    color: var(--trf-accent);
+}
+
+/* Footer */
+.custom-footer {
+    background: var(--trf-blue);
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+/* Responsive Tweaks */
 @media (max-width: 600px) {
-    .team-table,
-    .team-table th,
-    .team-table td {
-        font-size: 0.95em;
-        padding: 10px;
+    .hero-title { font-size: 2rem; }
+    .hero-subtitle { font-size: 1.1rem; }
+    .newsletter-box, .add-member-form {
+        padding: 12px 6px;
     }
-    .team-table {
-        width: 98%;
+    .gallery-box img {
+        border-radius: 8px;
     }
 }
-@media (max-width: 500px) {
-    .newsletter-form,
-    #contact-page textarea,
-    #contact-page input[type="text"],
-    #contact-page input[type="email"] {
-        width: 90vw;
-        min-width: 0;
-    }
-    #contact-page button {
-        width: 90vw;
-        min-width: 0;
-    }
-    .newsletter-box,
-    .inquiry-form {
-        min-width: 0;
-        max-width: 98vw;
-        padding: 18px 4vw;
-    }
+
+/* Make placeholder text white for all inputs and textareas */
+input::placeholder,
+textarea::placeholder {
+    color: #fff !important;
+    opacity: 1 !important; /* Ensures full opacity */
+}
+
+/* For cross-browser compatibility */
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #fff !important;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    color: #fff !important;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    color: #fff !important;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #fff !important;
 }

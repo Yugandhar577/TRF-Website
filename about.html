@@ -4,97 +4,110 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About - The Robotics Forum</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body id="about-page">
-  <header>
-    <nav>
-      <a href="about.html">ABOUT</a>
-      <a href="sponsors.html">SPONSORS</a>
-      <a href="events.html">EVENTS</a>
-      <a href="gallery.html">GALLERY</a>
-      <a href="achievements.html">ACHIEVEMENTS</a>
-      <a href="team.html">TEAM</a>
-      <a href="bots.html">BOTS</a>
-      <a href="contact.html">CONTACT</a>
-    </nav>
-  </header>
-  <a href="home.html"
-    ><img
-      src="resources/logo.jpeg"
-      alt="The Robotics Forum Logo"
-      width="100"
-      style="position: fixed; top: 15px; left: 15px"
-  /></a>
-  <div class="content">
-    <h1>The Robotics Forum (TRF) - VIT Pune</h1>
+<body id="about-page" class="bg-dark text-light">
 
-    <div class="toggle-section">
-      <h2>About Us</h2>
-      <p>
-        The Robotics Forum (TRF) is the premier robotics club of Vishwakarma
-        Institute of Technology (VIT) Pune, boasting a rich legacy of over 16
-        years. Established in 2006, TRF is a vibrant community of dedicated
-        robotics enthusiasts from various engineering disciplines, all united
-        by a shared passion for advancing robotic technology.
-      </p>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparent custom-navbar shadow">    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="home.html">
+        <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/logo.png" alt="The Robotics Forum Logo" width="48" class="me-2">
+        <span class="fw-bold">The Robotics Forum</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="sponsors.html">SPONSORS</a></li>
+          <li class="nav-item"><a class="nav-link" href="events.html">EVENTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">GALLERY</a></li>
+          <li class="nav-item"><a class="nav-link" href="achievements.html">ACHIEVEMENTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">TEAM</a></li>
+          <li class="nav-item"><a class="nav-link" href="bots.html">BOTS</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-10 text-center">
+        <img src="https://raw.githubusercontent.com/The-Robotics-Forum/website-assets/main/logo.png" alt="The Robotics Forum Logo" class="mb-4" style="max-width:120px;">
+        <h1 class="display-4 fw-bold mb-3">The Robotics Forum (TRF) - VIT Pune</h1>
+        <p class="lead">Premier Robotics Club at Vishwakarma Institute of Technology, Pune</p>
+      </div>
     </div>
 
-    <div class="toggle-section">
-      <h2>Vision</h2>
-      <p>
-        To lead innovation and excellence in robotics, creating a community of
-        passionate individuals dedicated to advancing robotic technology.
-      </p>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+          <div class="card-body">
+            <h2 class="card-title h4">About Us</h2>
+            <p class="card-text">
+              The Robotics Forum (TRF) is the premier robotics club of Vishwakarma Institute of Technology (VIT) Pune, boasting a rich legacy of over 16 years. Established in 2006, TRF is a vibrant community of dedicated robotics enthusiasts from various engineering disciplines, all united by a shared passion for advancing robotic technology.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+          <div class="card-body">
+            <h2 class="card-title h4">Vision</h2>
+            <p class="card-text">
+              To lead innovation and excellence in robotics, creating a community of passionate individuals dedicated to advancing robotic technology.
+            </p>
+            <h2 class="card-title h4 mt-4">Mission</h2>
+            <p class="card-text">
+              To provide a platform for robotics enthusiasts to develop technical skills, teamwork, and communication; explore creative ideas; and participate in competitions, workshops, and projects that enhance their knowledge and contribute to their personal and professional growth.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="toggle-section">
-      <h2>Mission</h2>
-      <p>
-        To provide a platform for robotics enthusiasts to develop technical
-        skills, teamwork, and communication; explore creative ideas; and
-        participate in competitions, workshops, and projects that enhance their
-        knowledge and contribute to their personal and professional growth.
-      </p>
+    <div class="row g-4 mt-1">
+      <div class="col-md-6">
+        <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+          <div class="card-body">
+            <h2 class="card-title h4">Workshops and Training</h2>
+            <p class="card-text">
+              TRF is committed to fostering technical skills among students through a variety of workshops, including Level-1, RoboDroid, RoboVision, Level-2, and CAD Modelling. These sessions cover essential topics such as sensor integration, motor control, embedded C programming, microcontrollers, computer vision, app development, and physical modeling tools. To date, TRF has trained over 3,500 members, continually expanding its reach each year.
+            </p>
+            <img src="https://media.licdn.com/dms/image/D4D22AQE5vQk1eGk3wA/feedshare-shrink_2048_1536/0/1711464473149?e=2147483647&v=beta&t=3wO9h6qjCkXwKx0d7D0vFjv2cXyQnR6W6tKf1z8F9nQ" alt="TRF Workshop" class="img-fluid rounded mt-3">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card bg-secondary bg-opacity-10 border-0 h-100">
+          <div class="card-body">
+            <h2 class="card-title h4">Domains</h2>
+            <ul class="list-group list-group-flush bg-transparent">
+              <li class="list-group-item bg-transparent text-light">
+                <strong>Electronics:</strong> Focuses on developing and researching circuit schematics and PCBs, analyzing sensors, programming robots, and actuating them through integrated systems.
+              </li>
+              <li class="list-group-item bg-transparent text-light">
+                <strong>Mechanics:</strong> Responsible for designing structurally sound robots, laying the groundwork for their creation, and ensuring robust mechanical frameworks.
+              </li>
+              <li class="list-group-item bg-transparent text-light">
+                <strong>Software:</strong> Engages in areas such as Android development, image processing, machine learning, and web design, undertaking research and industrial projects to delve deeper into these fields.
+              </li>
+            </ul>
+            <img src="https://media.licdn.com/dms/image/D4D22AQFZk9wI4fOpfQ/feedshare-shrink_2048_1536/0/1711464473149?e=2147483647&v=beta&t=3wO9h6qjCkXwKx0d7D0vFjv2cXyQnR6W6tKf1z8F9nQ" alt="TRF Domains" class="img-fluid rounded mt-3">
+          </div>
+        </div>
+      </div>
     </div>
+  </main>
 
-    <div class="toggle-section">
-      <h2>Workshops and Training</h2>
-      <p>
-        TRF is committed to fostering technical skills among students through a
-        variety of workshops, including Level-1, RoboDroid, RoboVision, Level-2,
-        and CAD Modelling. These sessions cover essential topics such as sensor
-        integration, motor control, embedded C programming, microcontrollers,
-        computer vision, app development, and physical modeling tools. To date,
-        TRF has trained over 3,500 members, continually expanding its reach each
-        year.
-      </p>
-    </div>
+  <footer class="custom-footer text-white text-center py-3 mt-5">
+    &copy; 2025 The Robotics Forum, VIT Pune. All rights reserved.
+  </footer>
 
-    <div class="toggle-section">
-      <h2>Domains</h2>
-      <ul>
-        <li>
-          <strong>Electronics:</strong> Focuses on developing and researching
-          circuit schematics and PCBs, analyzing sensors, programming robots,
-          and actuating them through integrated systems.
-        </li>
-        <li>
-          <strong>Mechanics:</strong> Responsible for designing structurally
-          sound robots, laying the groundwork for their creation, and ensuring
-          robust mechanical frameworks.
-        </li>
-        <li>
-          <strong>Software:</strong> Engages in areas such as Android
-          development, image processing, machine learning, and web design,
-          undertaking research and industrial projects to delve deeper into
-          these fields.
-        </li>
-      </ul>
-    </div>
-  </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
