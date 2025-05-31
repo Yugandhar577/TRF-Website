@@ -7,7 +7,7 @@
 
 /* General Styles */
 body {
-    background-color: #000 !important;
+    padding-top: 56px; 
     color: #fff;
     font-family: Arial, sans-serif;
 }
@@ -50,7 +50,8 @@ a:hover, a:focus {
 
 /* Hero Section */
 .hero-section {
-    min-height: 80vh;
+    height: 100vh;
+    padding-top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
