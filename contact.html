@@ -1,58 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - The Robotics Forum</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - The Robotics Forum</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body id="contact-page">
-    <header>
-        <nav>
-            <a href="about.html">ABOUT</a>
-            <a href="sponsors.html">SPONSORS</a>
-            <a href="events.html">EVENTS</a>
-            <a href="gallery.html">GALLERY</a>
-            <a href="achievements.html">ACHIEVEMENTS</a>
-            <a href="team.html">TEAM</a>
-            <a href="bots.html">BOTS</a>
-            <a href="contact.html">CONTACT</a>
-        </nav>
-    </header>
-    <a href="home.html"><img src="..\resources\logo.jpeg" alt="The Robotics Forum Logo" width="100" style="position: fixed; top: 15px; left: 15px;"></a> 
-    <div class="content">
-        <h1>Contact Us</h1>
-        <p>Email: robotics.forum@vit.edu</p>
-        <p>Phone: +91-XXXXXXXXXX</p>
-        <p>666, Upper Indira Nagar, Bibwewadi, Pune, Maharashtra 411037</p>
-        <h2>Connect with Us</h2>
-     <div class="social-links">
-        <p><a href="https://www.instagram.com/vitpunerobotics/" target="_blank">Instagram: @vitpunerobotics</a></p>
-        <p><a href="https://in.linkedin.com/company/the-robotics-forum" target="_blank">LinkedIn: The Robotics Forum, VIT Pune</a></p>
-        <p><a href="https://www.youtube.com/c/TheRoboticsForumVITPune" target="_blank"><img src="C:\Users\yugpa\Desktop\TRF WEBSITE\resources\youtube.jpeg"</a></p>
-        <p><a href="https://github.com/The-Robotics-Forum" target="_blank">GitHub: The-Robotics-Forum</a></p>
-     </div>
-    </div>    
-    <div class="newsletter-container">
-        <h2>Subscribe to our Newsletter</h2>
-        <p>Stay updated with the latest news and events from The Robotics Forum.</p>
-        <form action="Script.js" method="post" class="newsletter-form">
-            <label for="newsletter-username">Name:</label>
-            <input id="newsletter-username" name="username" type="text" placeholder="Enter your name" required>
-            <br>
-            <label for="newsletter-email">Email:</label>
-            <input id="newsletter-email" name="email" type="email" placeholder="Enter your email" required class="newsletter-email">
-            <br>
-            <button type="submit" class="newsletter-subscribe">Subscribe</button>
-        </form>
+  <header>
+    <nav>
+      <a href="about.html">ABOUT</a>
+      <a href="sponsors.html">SPONSORS</a>
+      <a href="events.html">EVENTS</a>
+      <a href="gallery.html">GALLERY</a>
+      <a href="achievements.html">ACHIEVEMENTS</a>
+      <a href="team.html">TEAM</a>
+      <a href="bots.html">BOTS</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+  </header>
+  <a href="home.html"
+    ><img
+      src="resources/logo.jpeg"
+      alt="The Robotics Forum Logo"
+      width="100"
+      style="position: fixed; top: 15px; left: 15px"
+  /></a>
+  <div class="content">
+    <h1>Contact Us</h1>
+    <p>Email: robotics.forum@vit.edu</p>
+    <p>Phone: +91-XXXXXXXXXX</p>
+    <p>666, Upper Indira Nagar, Bibwewadi, Pune, Maharashtra 411037</p>
+
+    <h2>Connect with Us</h2>
+    <div class="social-links">
+      <p><a href="https://www.instagram.com/vitpunerobotics/" target="_blank"
+          >Instagram: @vitpunerobotics</a
+        ></p>
+      <p>
+        <a href="https://in.linkedin.com/company/the-robotics-forum" target="_blank"
+          >LinkedIn: The Robotics Forum, VIT Pune</a
+        >
+      </p>
+      <p>
+        <a href="https://www.youtube.com/c/TheRoboticsForumVITPune" target="_blank"
+          >YouTube: The Robotics Forum</a
+        >
+      </p>
+      <p>
+        <a href="https://github.com/The-Robotics-Forum" target="_blank"
+          >GitHub: The-Robotics-Forum</a
+        >
+      </p>
     </div>
 
-    <script src="script.js"></script>
+    <h2>Frequently Asked Questions</h2>
+    <div id="faq">
+      <div class="faq-item">
+        <h3 class="faq-question">What is The Robotics Forum?</h3>
+        <div class="faq-answer">
+          <p>
+            The Robotics Forum (TRF) is the premier robotics club at VIT Pune,
+            focusing on robotics innovation, training, and competitions.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">How can I join TRF?</h3>
+        <div class="faq-answer">
+          <p>
+            You can join by attending our workshops or contacting us via email
+            or social media.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <h3 class="faq-question">Do you offer workshops?</h3>
+        <div class="faq-answer">
+          <p>
+            Yes, TRF organizes multiple workshops throughout the year for
+            beginners and advanced learners.
+          </p>
+        </div>
+      </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2023 The Robotics Forum. All rights reserved.</p>
-        <p>Website designed by Yugandhar Paulbidhe</p>
-    </footer>
+    <h2>Send an Inquiry</h2>
+    <form id="inquiry-form" class="inquiry-form">
+      <label for="inquiry-subject">Subject:</label>
+      <input type="text" id="inquiry-subject" placeholder="Subject" required />
+      <label for="inquiry-body">Body:</label>
+      <textarea
+        id="inquiry-body"
+        placeholder="Type your message here"
+        required
+      ></textarea>
+      <button type="submit" title="Click to send your inquiry">Inquire</button>
+    </form>
 
+    <div class="newsletter-container">
+      <h2>Subscribe to our Newsletter</h2>
+      <p>Stay updated with the latest news and events from The Robotics Forum.</p>
+      <div class="newsletter-box">
+        <form class="newsletter-form">
+          <label for="newsletter-username">Name:</label>
+          <input
+            id="newsletter-username"
+            name="username"
+            type="text"
+            placeholder="Enter your name"
+            required
+          />
+          <label for="newsletter-email">Email:</label>
+          <input
+            id="newsletter-email"
+            name="email"
+            type="email"
+            placeholder="Enter your email"
+            required
+            class="newsletter-email"
+            title="Enter your email address"
+          />
+          <button type="submit" class="newsletter-subscribe" title="Subscribe to newsletter">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 The Robotics Forum. All rights reserved.</p>
+    <p>Website designed by Yugandhar Paulbidhe</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
