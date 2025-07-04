@@ -1,6 +1,6 @@
 # 🤖 The Robotics Forum (TRF) – Website
 
-Welcome to the official repository of **The Robotics Forum** website. This site serves as the digital face of TRF, showcasing our projects, team, events, and providing an easy way for visitors to connect with us.
+Welcome to the repository of **The Robotics Forum** website. This site serves as the digital face of TRF, showcasing our projects, team, events, and providing an easy way for visitors to connect with us.
 
 ---
 
@@ -20,7 +20,6 @@ Welcome to the official repository of **The Robotics Forum** website. This site 
 * **HTML5**
 * **CSS3** (with Bootstrap 5)
 * **JavaScript** (Vanilla)
-* \[Optional: Add any frameworks or libraries used, e.g., jQuery, AOS]
 
 ---
 
@@ -36,4 +35,4 @@ open index.html  # or just double click to open in your browser
 
 ## 💡 Credits
 
-Made by Yugandhar for the TRF club 
+Made by Yugandhar for the TRF club, actually made it before the main website went online  
